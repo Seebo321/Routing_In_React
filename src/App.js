@@ -3,6 +3,7 @@ import Welcome from "./components/welcome/welcome";
 import Clock from "./components/clock/Clock";
 import Contact from "./components/contact/Contact";
 import Navigation from "./components/navigation/navigation";
+import Jepardy from "./components/Jeopardy/Jeopardy"
 import { Route } from "react-router-dom";
 import { Switch } from "react-router-dom";
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
       />
       <Route exact path="/clock" component= {Clock} />
       <Route exact path="/contact" component= {Contact} />
+      <Route exact path="/jepardy" component= {Jepardy}/>
       <Route
       component={Error404}/>
       </Switch>
